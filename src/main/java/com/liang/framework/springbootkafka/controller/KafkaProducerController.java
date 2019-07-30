@@ -14,8 +14,13 @@ public class KafkaProducerController {
 
     @RequestMapping("send")
     public String send(String msg){
-        for(int i = 0;i<10000;i++)
-        kafkaTemplate.send("test_topic", msg+i);
+        for(int i = 0;i<10000;i++) {
+            kafkaTemplate.send("test_topic1", msg + i);
+            /*kafkaTemplate.send("test_topic2", msg + i);
+            kafkaTemplate.send("test_topic3", msg + i);
+            kafkaTemplate.send("test_topic4", msg + i);
+            kafkaTemplate.send("test_topic5", msg + i);*/
+        }
         return "success";
     }
 

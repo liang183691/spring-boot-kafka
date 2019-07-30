@@ -1,3 +1,4 @@
+/*
 package com.liang.framework.springbootkafka.config;
 
 import com.liang.framework.springbootkafka.controller.Consumer;
@@ -56,3 +57,4 @@ public class KafkaConsumerConfig {
     }
 }
 
+*/
